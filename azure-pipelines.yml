@@ -1,15 +1,18 @@
 stages:
 - template: azure_template.yml
+  dependsOn: []
   parameters:
     name: Windows
     platform: vs2017-win2016
 
 - template: azure_template.yml
+  dependsOn: []
   parameters:
     name: MacOS
     platform: macos-10.13
 
 - template: azure_template.yml
+  dependsOn: []
   parameters:
     name: Linux
     platform: ubuntu-16.04
